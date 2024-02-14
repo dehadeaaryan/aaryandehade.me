@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Page = () => {
     return (
-        <div className="homepage">
-            <h1>Page</h1>
+        <div className="w-screen bg-slate-400 h-10">
+            
         </div>
     );
 }
