@@ -15,13 +15,13 @@ const Header = () => {
         "Contact"
     ];
     return (
-        <header className="w-full">
-            <nav className="w-full flex justify-between py-2 px-4 gap-4">
-                <Link href={`/`} className="max-md:hidden w-1/3 text-2xl font-extrabold">Aaryan Dehade</Link>
-                <Link href={`/`} className="md:hidden w-1/4 text-4xl font-extrabold">AD</Link>
+        <header className="sticky top-0 h-[4rem] w-full bg-neutral-900 md:backdrop-blur-[0.5rem] shadow-lg">
+            <nav className="h-full w-full flex justify-between py-2 px-4 gap-4">
+                <Link href={`/`} className="flex items-center max-md:hidden w-1/3 text-2xl font-extrabold">Aaryan Dehade</Link>
+                <Link href={`/`} className="flex items-center md:hidden w-1/4 text-4xl font-extrabold">AD</Link>
                 <ul className={`${!hamburgerIsOpen && "max-md:hidden"} flex flex-col md:flex-row max-md:w-1/2 w-1/3 items-center justify-between mt-16 md:mt-0`}>
                     {links.map((link, index) => (
-                        <li key={index} className="max-md:py-4 w-full text-center">
+                        <li key={index} className="max-md:py-4 text-center">
                             <Link href={`/${link.toLowerCase()}`} className="max-md:text-3xl">{link}</Link>
                         </li>)
                         )
